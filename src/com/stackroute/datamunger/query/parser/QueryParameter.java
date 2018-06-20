@@ -9,36 +9,63 @@ import java.util.List;
  * */
 
 public class QueryParameter {
-
+	private String fileName;
+	private String baseQuery;
+	private List<Restriction> restrictions;
+	private List<String> fields;
+	private List<String> logicalOperators;
+	private List<AggregateFunction> aggregateFunctions;
+	private List<String> orderByField;
+	private List<String> groupByField;	
+	//private String queryType;
 	public String getFileName() {
-		return null;
+		return fileName;
 	}
-
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
 	public String getBaseQuery() {
-		return null;
+		return baseQuery;
 	}
-
+	public void setBaseQuery(String baseQuery) {
+		this.baseQuery = baseQuery;
+	}
 	public List<Restriction> getRestrictions() {
-		return null;
+		return restrictions;
 	}
-
-	public List<String> getLogicalOperators() {
-		return null;
+	public void setRestrictions(List<Restriction> restrictions) {
+		this.restrictions = restrictions;
 	}
-
 	public List<String> getFields() {
-		return null;
+		return fields;
 	}
-
+	public void setFields(List<String> feilds) {
+		this.fields = feilds;
+	}
+	public List<String> getLogicalOperators() {
+		return logicalOperators;
+	}
+	public void setLogicalOperators(List<String> logicalOperators) {
+		this.logicalOperators = logicalOperators;
+	}
 	public List<AggregateFunction> getAggregateFunctions() {
-		return null;
+		return aggregateFunctions;
 	}
-
-	public List<String> getGroupByFields() {
-		return null;
+	public void setAggregateFunctions(List<AggregateFunction> aggregateFunctions) {
+		this.aggregateFunctions = aggregateFunctions;
 	}
-
 	public List<String> getOrderByFields() {
-		return null;
+		return orderByField;
 	}
+	public void setOrderByField(List<String> orderByField) {
+		this.orderByField = orderByField;
+	}
+	public List<String> getGroupByFields() {
+		return groupByField;
+	}
+	public void setGroupByField(List<String> groupByField) {
+		this.groupByField = groupByField;
+	}
+	
+		
 }
