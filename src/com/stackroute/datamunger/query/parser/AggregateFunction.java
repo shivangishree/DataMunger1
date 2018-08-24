@@ -8,8 +8,9 @@ package com.stackroute.datamunger.query.parser;
 
 public class AggregateFunction {
 
-	private String field;
-	private String function;
+	//AggregateFunction has two member variable field and function eg max(count)
+	private String field; // field = count
+	private String function;// function = max
 	// Write logic for constructor
 	public AggregateFunction(String field, String function) {
 		this.field = field;

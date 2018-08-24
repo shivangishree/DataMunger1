@@ -200,10 +200,7 @@ public class QueryParser {
 	    }
 	    else {
 	    conditions = queryString.split("where | group by | order by ")[1].trim().split(" and | or ");
-	    for(String condition:conditions) {
-//	    String name = condition.split(" ")[0].trim();
-//	    String value = condition.split(" ")[2].trim();
-//	    String restrictionCondition = condition.split(" ")[1].trim();
+	    for(String condition:conditions) {  
 	    restriction = new Restriction();
 	    String [] conditionSplitted = condition.split(" |'");
 	    restriction.setName(conditionSplitted[0].trim());
